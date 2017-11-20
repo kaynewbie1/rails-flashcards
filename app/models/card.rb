@@ -3,5 +3,5 @@ class Card < ApplicationRecord
   has_many :guesses
   has_many :rounds, through: :deck
 
-  validates :questions, :answer, presence: true
+  validates :question, :answer, presence: true
 end

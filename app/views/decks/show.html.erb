@@ -1,0 +1,7 @@
+<%= @deck.title %>
+
+<p>Are you ready to play?</p>
+
+<%= form_for :post, url: rounds_path do |form| %>
+  <%= form.submit "let's play!", class: "form-submit" %>
+<% end %>
