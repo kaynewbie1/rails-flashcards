@@ -1,4 +1,4 @@
-Deck.destroy_all
+# Deck.destroy_all
 
 
 deck = Deck.create!( title: "Tennis Topics" )
@@ -17,7 +17,7 @@ card_5 = Card.create!( question: "Who won the ladies singles most times at Wimbl
 
 card_6 = Card.create!( question: "Who won the 2017 US Open?", answer: "Sloane Stephens" , deck: deck_1 )
 
-user = User.create!(username: "Serena", email: "ace@ace.com")
+user = User.create!(username: "Serena", email: "ace@ace.com", password: "password")
 
 round = Round.create!(deck: deck, player: user)
 
